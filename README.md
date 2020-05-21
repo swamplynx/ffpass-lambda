@@ -3,7 +3,6 @@ Fork of @d4v3y0rk ffpass node modules to control FordPass equipped vehicles pack
 
 These instructions are VERY rough, and I hope to enhance them when I have additional time. Nevertheless, if you have some basic experience with AWS Lambda you should be able to get up and running fairly easily. Once you have the API running, you can use it to start your car and much more with a Siri shortcut, NFC tag, or anything else that can send a HTTP GET request (e.g. SmartThings, etc.) with custom headers.
 
-
 <B>Getting Started</B>  
 1) Prerequisites:
 	- FordPass capable vehicle and account
@@ -33,7 +32,7 @@ These instructions are VERY rough, and I hope to enhance them when I have additi
 19) Click the created API, then click API Keys on the left. Select your key, and click show to record the key.
 20) Browse back to Lambda and select the ffpass function, once it opens click on API Gateway to expose your API endpoint and copy this down.
 
-You are done setting up the server. To send a command you will send a GET request you API Endpoint with two custom headers.
+You are done setting up the server. To send a command you will send a GET request to your API Endpoint with two custom headers. Using Postman to test is a good idea.
 
 <B>Headers:</B>
 
@@ -42,3 +41,5 @@ You are done setting up the server. To send a command you will send a GET reques
 	2) command : status, start, stop, unlock, or lock<
 
 ... the commands are fairly self explaintory. 'status' will return a whole bunch of info in the response body that you can use for cool things such as asking Siri how much gas you have left.
+
+THIS SOFTWARE WAS CREATED EXPRESSLY FOR MY OWN PERSONAL USE. YOUR USE OF THIS SOFTWARE IS ENTIRELY AT YOUR OWN RISK. DEVELOPER SHALL NOT BE RESPONSIBLE OR LIABLE UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHER THEORY ARISING OUT OF OR RELATED TO THIS OPEN SOURCE SOFWARE.
