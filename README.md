@@ -33,9 +33,12 @@ These instructions are VERY rough, and I hope to enhance them when I have additi
 19) Click the created API, then click API Keys on the left. Select your key, and click show to record the key.
 20) Browse back to Lambda and select the ffpass function, once it opens click on API Gateway to expose your API endpoint and copy this down.
 
-You are done setting up the server. To send a command you will send a GET request you API Endpoint with some custom headers.
+You are done setting up the server. To send a command you will send a GET request you API Endpoint with two custom headers.
 
-Header:
-x-api-key : your AWS API Key
-command : status, start, stop, unlock, or lock
+<B>Headers:</B>
+
+
+ 	1) x-api-key : your AWS API Key
+	2) command : status, start, stop, unlock, or lock<CR>
+
 ... the commands are fairly self explaintory. status will return a whole bunch of info in the response body that you can use for cool things such as asking Siri how much gas you have left.
