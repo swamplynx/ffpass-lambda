@@ -38,7 +38,7 @@ You are done setting up the server. To send a command you will send a GET reques
 
 
  	1) x-api-key : your AWS API Key
-	2) command : status, start, stop, unlock, or lock<
+	2) command : status, start, stop, unlock, or lock
 
 ... the commands are fairly self explaintory. 'status' will return a whole bunch of info in the response body that you can use for cool things such as asking Siri how much gas you have left.
 
