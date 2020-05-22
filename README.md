@@ -1,7 +1,7 @@
 # ffpass-lambda
 Fork of @d4v3y0rk ffpass node modules to control FordPass equipped vehicles packaged and rewritten to run in AWS Lambda.
 
-These instructions are VERY rough, and I hope to enhance them when I have additional time. Nevertheless, if you have some basic experience with AWS Lambda you should be able to get up and running fairly easily. Once you have the API running, you can use it to start your car and much more with a Siri shortcut, NFC tag, or anything else that can send a HTTP GET request (e.g. SmartThings, etc.) with custom headers.
+These instructions are VERY rough. Nevertheless, if you have some basic experience with AWS Lambda you should be able to get up and running fairly easily. I've been able to use it to start my car and much more with a Siri shortcut, NFC tag, or anything else that can send a HTTP GET request (e.g. SmartThings, etc.) with custom headers.
 
 <B>Getting Started</B>  
 1) Prerequisites:
