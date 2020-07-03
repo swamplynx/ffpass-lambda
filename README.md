@@ -20,11 +20,12 @@ These instructions are VERY rough. Nevertheless, if you have some basic experien
 11) Click ffpass above Layers to get back to the Function code editor
 12) Now we need to paste in the index.js code for the front-end that has been customized to run in AWS.
 13) Copy the index.js code from this repository and paste it into the editor. Double-check that it copied over properly, then click Save in the upper right corner.
-14) You need to create four Environmental Variables below the function code editor:
+14a) You need to create four Environmental Variables below the function code editor:
 	- FORD_USERNAME : your FordPass username 
 	- FORD_PASSWORD : your FordPass password
 	- VIN : the VIN of the vehicle you want to control through this API
 	- MAPS_API_KEY : your API key from Geocodio
+14b) You also need to increase the execution timeout to 45 seconds to give the API time to send the command to your card and get confirmation that it did or did not work. Under "Basic Setting," click Edit and increase the time out to 45 seconds from the default.
 15) Click save. The function is now complete, but we still need to create an API Gateway endpoint to access the function over the internet.
 16) Under Designer click Add trigger and select API Gateway
 17) Select REST API, and Security API Key and Create
